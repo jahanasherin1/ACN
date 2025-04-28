@@ -9,14 +9,14 @@ then
 exit 1
 fi
 i=2
-while [ $i -lt `expr $1 / 2 ` ]
+while [ $i -le `expr $1 / 2 ` ]
 do
-i=`expr $i + 1`
 if [ `expr $1 % $i` -eq 0 ]
 then
 echo "$1 is not a prime number "
 exit 0
 fi
+i=`expr $i + 1`
 done
 echo " $1 is a prime number "
 fi
