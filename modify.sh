@@ -12,7 +12,7 @@ then
 fi
 if [ -f $2 ]
 then
-    echo " Target file exists,over write it (y/n)"
+    echo " Target file exists,over write it "
     read ans
 if [ $ans = "n" ]
 then
