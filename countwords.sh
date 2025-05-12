@@ -1,5 +1,5 @@
 #To count number of words and lines in a file
-if [ $# -gt 1 ]
+if [ $# -ne 1 ]
 then
    echo "syntax is <$0> <file name>"
 exit 1
